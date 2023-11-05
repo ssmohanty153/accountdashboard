@@ -25,7 +25,7 @@ const CardComponentApp = () => {
   const handleSelector2Change = (event) => {
     const newValue = event.target.value;
     setMonth(newValue);
-    // Update the chart data 
+    // Update the chart data
     const updatedData = dummyData.map((dataPoint) => ({
       ...dataPoint,
       value: dataPoint.value * newValue,
@@ -49,12 +49,7 @@ const CardComponentApp = () => {
                 <MenuItem value={2}>Option 2</MenuItem>
                 <MenuItem value={3}>Option 3</MenuItem>
               </Select>
-              <Select
-                label="Selector 2"
-                value={month}
-                onChange={handleSelector2Change}
-                style={selectStyle}
-              >
+              <Select label="Selector 2" value={month} style={selectStyle}>
                 <MenuItem value={1}>January</MenuItem>
                 <MenuItem value={2}>February</MenuItem>
                 <MenuItem value={3}>March</MenuItem>
