@@ -49,7 +49,7 @@ const CardComponentApp = () => {
                 <MenuItem value={2}>Option 2</MenuItem>
                 <MenuItem value={3}>Option 3</MenuItem>
               </Select>
-              <Select label="Selector 2" value={month} style={selectStyle}>
+              <Select label="Selector 2" defaultValue={1} style={selectStyle}>
                 <MenuItem value={1}>January</MenuItem>
                 <MenuItem value={2}>February</MenuItem>
                 <MenuItem value={3}>March</MenuItem>
